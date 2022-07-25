@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register form</title>
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+    background-image: url('index.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+  }
+  ul li{
+    display: inline-block;
+  }
+  .topnav{
+    overflow: hidden;
+    background-color: #000000;
+    padding:0px 10px;
+  }
+  .topnav a
+  {
+    float: left;
+    text-align: center;
+    padding: 0px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #ffffff;
+    font-family: serif;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+  }
+  .topnav a:hover
+  {
+    background-color: #556B2F;
+    color: black;
+  }
+  .topnav a.active
+  {
+    background-color: #4CAF50;
+    color: white;
+  }
+  form{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .4);
+    padding: 50px;
+    border-radius: 4px;
+  }
+  form label{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  form input,select{
+    font-size: 18px;
+    padding: 7px;
+    width: 100%;
+    border: 1px solid #fff000;
+    border-radius: 20px;
+    color: #fff;
+    display: block;
+    background: transparent;
+  }
+  form input[type="submit"]{
+     width: 120px;
+     margin-top: 10px;
+     cursor: pointer;
+  }
+  option{
+    color: #000;
+  }
+  form p{
+    color: #fff;
+    font-size: 17px;
+  }
+  font p a{
+    color: #fff000;
+    font-size: 20px;
+    /* font-decoration: none; */
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+
+  </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+          </header></div>
+    <h1 style="text-align:center"> Registration </h1>
+    <form action="signup.php" method="post">
+      <label for="user">Username</lable>
+        <input type="text" name="name" id="user">
+        <lable for="email">Email</label>
+         <input type="email" name="email" id="email">
+         <label for="pass">Password</label>
+         <input type="password" name="password" id="pass">
+         <label for="rpass">Confirm Password</label>
+         <input type="password" name="password-re" id="rpass">
+         <label for="phone">Phone</label>
+         <input type="tel" name="no" id="phone">
+         <label>Select your gender</label>
+         <select name="gender">
+           <option value="m" >Male</option>
+           <option value="f" >Female</option>
+        </select>
+          <label>Select your State</label>
+          <select name="country">
+            <option value="Karnataka" >Karnataka</option>
+            <option value="Assam" >Assam</option>
+            <option value="Goa" >Goa</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Meerut">Meerut</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Harayana">Harayana</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Jabalpur">Jabalpur</option>
+         </select>
+         <center>
+         <input type="submit" name="submit" value="Register"></center>
+         <p>If you are register member please <a href="login.html">Log In Here</a></p>
+    </form>
+</body>
+</html>

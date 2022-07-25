@@ -1,0 +1,91 @@
+#contact{
+  font-family: Arial,sans-serif;
+  background: url('contact.jpg') no-repeat;
+  background-size: 100%;
+}
+header{
+  text-align: left;
+  color: white;
+  background-color: #000080;
+  height: 10vh;
+  background-size: cover;
+  background-position: center;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+ul li{
+  display: inline-block;
+}
+.topnav{
+  overflow: hidden;
+  background-color: #000080;
+}
+.topnav a
+{
+  float: right;
+  text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  border: 1.4px solid #008000;
+  font-family: serif;
+}
+.topnav a:hover
+{
+  background-color: #556B2F;
+  color: black;
+}
+.topnav a.active
+{
+  background-color: #4CAF50;
+  color: white;
+}
+h1
+{
+  color: #3CB371;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 2px;
+
+}
+h3{
+  margin-top: 0px;
+}
+input[type=text],select,textarea{
+  padding:12px;
+  width: 80%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+input[type="submit"]{
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 40px;
+  width: 130px;
+  font: bold 15px arial, sans-serif;
+  text-shadow:none;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+input[type=submit]:hover{
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3
+}
+form
+{
+  position: relative;
+  top: 55%;
+  left: 35%;
+  border-radius: 5px;
+  background: rgba(100,50,900,0.5);
+  padding:20px;
+  max-width: 35%;
+}

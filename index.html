@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>SPORTS MANAGEMENT</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body bgcolor="#d8bfd8">
+  <header>
+  <div class="topnav">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="registration.html">Register</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+<style>
+body{
+  color:Maroon;
+  margin:0px 0px;
+
+
+}
+
+#example1, #example2, #example3, #example4{
+  height:200px;
+  width:55%;
+  border: 2px solid Navy;
+  padding: 35px;
+  border-radius: 20px;
+  background: DarkCyan;
+  font-size: 130%;
+  margin:30px 30px;
+
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+ul li{
+  display: inline-block;
+}
+.topnav a:hover
+{
+  background-color: #556B2F;
+  color: black;
+}
+.topnav a.active
+{
+  background-color: #4CAF50;
+  color: white;
+}
+
+  .topnav{
+  overflow: hidden;
+  background-color: #000000;
+  padding:0px 10px;
+  
+}
+.topnav a
+{
+  float: left;
+  text-align: center;
+  padding: 0px 15px;
+  /* margin:2px 2px; */
+  text-decoration: none;
+  font-size: 20px;
+  font-family: serif;
+  border: 2px solid white;
+  border-radius:20px;
+  background-color: #000000;
+  color:white;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #2f4f4f;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="download.jpg" style="width:100%" height="15%">
+  <!-- <div class="text">Cricket</div> -->
+</div>
+
+<div class="mySlides fade">
+  <img src="volley.jpg" style="width:100%" height="15%">
+  <div class="text">Volleyball</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="foot.jpeg" style="width:100%" height="15%">
+  <div class="text">Football</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="rugby.jpg" style="width:100%" height="15%">
+  <div class="text">American FootBall</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+
+}
+</script>
+
+<center>
+<div id="example1">
+  <h2 style="color:Maroon;">Cricket</h2>
+  <img src="cricket.jpg" alt="Cricket" height="120" width="180" align="left">
+  <p style="display:inline">Cricket is the most popular sport in India by far and is played everywhere. The Indian national cricket won the 1983 Cricket World Cup, the 2007 ICC World T20, the 2011 Cricket World Cup, the 2013 ICC Champions Trophy, shared 2002 ICC champions trophy with Srilanka. The good news for Indian Cricket fans is the 2023 Cricket World Cup will be hosted by India. </p>
+</div>
+<div id="example2">
+<h2 style="color:Maroon;">BasketBall</h2>
+<img src="basketball.jpg" alt="BasketBall" height="120" width="180" align="right">
+<p>First BasketBall National level tournaments were organized in India in 1934. The India National BasketBall team became a member of FIBA in 1936. The governing body, BFI, was formed in 1950. Poonam Mahajan is the president of BasketBall Federation of India. The current head of BFI is R.S.Gill. </p>
+</div>
+<div id="example3">
+<h2 style="color:Maroon;">VolleyBall</h2>
+<img src="Volleyball.jpg" alt="BasketBall" height="120" width="180" align="left">
+<p>VolleyBall is a sport played all over in India, both in rural as well as urban India. It is a popular recreation sport. India was ranked 5th in Asia and 27th in the world in 2013. Doing well in the youth and junior levels, India came in second second in the 2003 World Youth Championships. The Indian senior men's team is currently ranked 131st in the world. </p>
+</div>
+<div id="example4">
+<h2 style="color:Maroon;">FootBall</h2>
+<img src="football.jpg" alt="FootBall" height="120" width="180" align="right">
+<p>The India national football team represents India in international football and is controlled by the All India Football Federation. Under the global jurisdiction of FIFA and governed in Asia by the AFC, the team is also part of the South Asian Football Federation. The team, which was once considered one of the best teams in Asia, had its golden era during the 1950s and early 1960s.   </p>
+</div>
+</center>
+</body>
+<footer>
+
+</footer>
+</html>

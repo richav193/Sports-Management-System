@@ -1,0 +1,110 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url("index.jpg") no-repeat;
+  background-size: cover;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+ul li{
+  display: inline-block;
+}
+  .topnav{
+    overflow: hidden;
+    background-color: #000080;
+  }
+  .topnav a
+  {
+    float: right;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: serif;
+    border: 1.4px solid #008000;
+  }
+  .topnav a:hover
+  {
+    background-color: #556B2F;
+    color: black;
+  }
+  .topnav a.active
+  {
+    background-color: #4CAF50;
+    color: white;
+  }
+.login{
+  width: 280px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.login h1{
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid #4caf50;
+  margin-bottom: 50px;
+  padding: 13px 0
+}
+.topnav{
+  overflow: hidden;
+  background-color: #000080;
+}
+.topnav a{
+  float: right;
+  text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: serif;
+}
+.topnav a:hover
+{
+  background-color: #556B2F;
+  color: black;
+}
+.topnav a.active{
+  background-color: #4CAF50;
+  color: white;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color:white;
+  font-size: 15px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.btn{
+  width: 100%;
+  background: none;
+  border: 5px solid #4caf50;
+  border-radius:20px;
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 12px 0;
+  transition: 0.6s ease;
+}
